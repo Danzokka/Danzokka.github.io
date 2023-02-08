@@ -24,7 +24,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">O que eu faço</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">Sobre Mim</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Projetos</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Certificados</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,19 +46,19 @@
                 <div class="service">
                     <h3>Análise de Dados</h3>
                     <p>
-                        Atualmente, tenho estudado análise de dados em um curso oferecido pela a Google, no qual aprendemos todos os processos de tomada de ações orientada por dados, utilizando planilhas, SQL(Linguagem de Consulta Estruturada) e a Linguagem de Programação R.
+                        Atualmente, estou estudando análise de dados em um curso oferecido pela Google, no qual aprendemos todos os processos de tomada de decisão orientados por dados, utilizando planilhas, a linguagem de consulta estruturada SQL e a linguagem de programação R.
                     </p>
                 </div>
                 
                 <div class="service">
                     <h3>Engenharia da computação</h3>
                     <p>
-                        Estou no 3º Semestre de Engenharia da Computação no IESB, no qual aprendemos a montar circuitos elétricos, montando circuitos utilizando resistores, LEDs, portas lógicas e capacitores, aprendemos também programação na linguagem C e estruturação de Banco de Dados, usando o MySQL.
+                        Estou no 3º semestre de Engenharia da Computação no IESB, onde aprendemos a montar circuitos elétricos, usando resistores, LEDs, portas lógicas e capacitores. Além disso, estudamos programação na linguagem C e estruturação de bancos de dados, utilizando o MySQL.
                     </p>
                 </div>
             </div>
             
-            <a href="#work" class="btn">Projetos</a>
+            <a href="#work" class="btn">Certificados</a>
         </section>
         
         
@@ -68,10 +68,10 @@
            
            <div class="about-me__body">
                <p>
-                Olá, eu sou Rafael Dantas, tenho 19 anos e sou uma pessoa que gosta muito de aprender e descobrir novas tecnologias. Desde pequeno sempre fui muito curioso e ligado na internet, então de pouco em pouco a curiosidade foi aumentando e assim fui aprendendo a programar, começando com C# e logo em seguida aprendendo Python e a linguagem C.
+                Olá, sou Rafael Dantas, tenho 20 anos e sou apaixonado por aprender e descobrir novas tecnologias. Desde jovem, sempre fui curioso e ligado à internet, o que fez com que minha curiosidade fosse aumentando aos poucos. Assim, comecei a aprender a programar, primeiro com C# e, posteriormente, com Python e a linguagem C.
                 </p>
                <p>
-                Atualmente estou no 3º Semestre da faculdade, no qual começaremos a aprender Programação Orientada à Objetos utilizando a linguagem Java. Também tenho aprendido JavaScript, HTML5 e CSS, além da Linguagem de programação R.
+                Atualmente, estou no 4º semestre da faculdade, onde começaremos a estudar estrutura de dados. Além disso, tenho ampliado meus conhecimentos em JavaScript, HTML5, CSS, programação orientada a objetos com Java e também na linguagem de programação R.
                </p>
            </div>
            
@@ -80,26 +80,68 @@
         
         
         <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">Meus Projetos</h2>
+            <h2 class="section__title section__title--work">Meus Certificados</h2>
             <p class="section__subtitle section__subtitle--work">Alguns exemplos dos meus projetos</p>
             
-            <div class="portfolio">
-                <a href="https://imgur.com/HaU0jAy"class="portfolio__item">
-                    <img src="assets/Certificado.png" alt="" class="portfolio__img" height="330px">
-                </a>
-                <a href="https://imgur.com/QdLalHq" class="portfolio__item">
-                    <img src="assets/Certificado2.png" alt="" class="portfolio__img" height="330px">
-                </a> 
-                <a href="https://imgur.com/2BbzN3P" class="portfolio__item">
-                    <img src="assets/Certificado3.png" alt="" class="portfolio__img" height="330px" width="100%">
-                </a>
-                <a href="https://imgur.com/rNrdSyz" class="portfolio__item">
-                    <img src="assets/Certificado4.png" alt="" class="portfolio__img" height="330px" width="100%">
-                </a> 
-                <a href="https://imgur.com/a17DHk5" class="portfolio__item">
-                    <img src="assets/Certificado5.png" alt="" class="portfolio__img" height="330px" width="100%">
-                </a>  
+            <div class="slideshow-container">
+                
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="assets/Certificado.png" style="width:100%">
+                  <div class="text">Fundamentos: dados, dados, em todos os lugares</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="assets/Certificado2.png" style="width:100%">
+                  <div class="text">Fazer perguntas para tomar decisões com base em dados</div>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="assets/Certificado3.png" style="width:100%">
+                  <div class="text">Preparar os Dados para Exploração</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/Certificado4.png" style="width:100%">
+                    <div class="text">Processar os dados para limpá-los</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/Certificado5.png" style="width:100%">
+                    <div class="text">Analisar os dados para responder às perguntas</div>
+                </div>
             </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 4500); // Change image every 4,5 seconds
+                }
+                </script>
         </section>
 
         
