@@ -1,191 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Danzokka Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-        <link rel="icon" href="assets/logo.png">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="assets/logo.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">O que eu faço</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Sobre Mim</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Certificados</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Olá, Eu sou <strong>Rafael Dantas</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Engenheiro da Computação</p>
-            <img src="assets/Me.jpeg" alt="Eu de mascara" class="intro__img">
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">O que eu faço?</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Análise de Dados</h3>
-                    <p>
-                        Atualmente, estou estudando análise de dados em um curso oferecido pela Google, no qual aprendemos todos os processos de tomada de decisão orientados por dados, utilizando planilhas, a linguagem de consulta estruturada SQL e a linguagem de programação R.
-                    </p>
-                </div>
-                
-                <div class="service">
-                    <h3>Engenharia da computação</h3>
-                    <p>
-                        Estou no 4º semestre de Engenharia da Computação no IESB, onde aprendemos a montar circuitos elétricos, usando resistores, LEDs, portas lógicas e capacitores. Além disso, estudamos programação na linguagem C e estruturação de bancos de dados, utilizando o MySQL.
-                    </p>
-                </div>
-            </div>
-            
-            <a href="#work" class="btn">Certificados</a>
-        </section>
-        
-        
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Sobre Mim</h2>
-           <p class="section__subtitle section__subtitle--about">Um estudante de Engenharia da Computação</p>
-           
-           <div class="about-me__body">
-               <p>
-                Olá, sou Rafael Dantas, tenho 20 anos e sou apaixonado por aprender e descobrir novas tecnologias. Desde jovem, sempre fui curioso e ligado à internet, o que fez com que minha curiosidade fosse aumentando aos poucos. Assim, comecei a aprender a programar, primeiro com C# e, posteriormente, com Python e a linguagem C.
-                </p>
-               <p>
-                Atualmente, estou no 4º semestre da faculdade, onde começaremos a estudar estrutura de dados. Além disso, tenho ampliado meus conhecimentos em JavaScript, HTML5, CSS, programação orientada a objetos com Java e também na linguagem de programação R.
-               </p>
-           </div>
-           
-           <img src="assets/Me2.jpeg" alt="" class="about-me__img">
-        </section>
-        
-        
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">Meus Certificados</h2>
-            <p class="section__subtitle section__subtitle--work">Alguns exemplos dos meus projetos</p>
-            
-            <div class="slideshow-container">
-                
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <a href="https://danzokka.github.io/assets/Certificado.png" class="portfolio__item">
-                        <img src="assets/Certificado.jpg" class="center">
-                    </a>
-                    <div class="text">Fundamentos: dados, dados, em todos os lugares</div>
-                </div>
-              
-                <div class="mySlides fade">
-                    <a href="https://danzokka.github.io/assets/Certificado2.png" class="portfolio__item">
-                        <img src="assets/Certificado2.jpg" class="center">
-                    </a>
-                    <div class="text">Fazer perguntas para tomar decisões com base em dados</div>
-                </div>
-              
-                <div class="mySlides fade">
-                    <a href="https://danzokka.github.io/assets/Certificado3.png" class="portfolio__item">
-                        <img src="assets/Certificado3.jpg" class="center">
-                    </a>
-                    <div class="text">Preparar os Dados para Exploração</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <a href="https://danzokka.github.io/assets/Certificado4.png" class="portfolio__item">
-                        <img src="assets/Certificado4.jpg" class="center">
-                    </a>
-                    <div class="text">Processar os dados para limpá-los</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <a href="https://danzokka.github.io/assets/Certificado5.png" class="portfolio__item">
-                        <img src="assets/Certificado5.jpg" class="center">
-                    </a>
-                    <div class="text">Analisar os dados para responder às perguntas</div>
-                </div>
-            </div>
-            <br>
-
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <script>
-                let slideIndex = 0;
-                showSlides();
-                
-                function showSlides() {
-                  let i;
-                  let slides = document.getElementsByClassName("mySlides");
-                  let dots = document.getElementsByClassName("dot");
-                  for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                  }
-                  slideIndex++;
-                  if (slideIndex > slides.length) {slideIndex = 1}    
-                  for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
-                  setTimeout(showSlides, 3500); // Change image every 3,5 seconds
-                }
-                </script>
-        </section>
-
-        
-
-        <footer class="footer">
-            <a href="mailto:rafaeldantasboeira@gmail.com" class="footer__link">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/rafael-dantas-134621243/">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/danzokka/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/Danzokka">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://discordapp.com/users/264161929679994882/">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                </li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/01d22bbb46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/teste.png" class="logo" draggable="false">
+            <ul id = "sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contatos</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-        </footer>
-        
-        
-        <script src="js/index.js"></script>
-        
-    </body>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Dev Junior<p>
+            <h1>Olá, eu sou <br><span>Rafael</span> Dantas!</h1>
+        </div>
+    </div>
+</div>
+
+<!---------Sobre Mim---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/Me.jpeg" class="shadow-pop-tl" draggable="false">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Sobre Mim</h1>
+                <p>Olá, sou Rafael Dantas, tenho 20 anos e sou apaixonado por aprender e descobrir novas tecnologias. Desde jovem, sempre fui curioso e ligado à internet, o que fez com que minha curiosidade fosse aumentando aos poucos. Assim, comecei a aprender a programar, primeiro com C# e, posteriormente, com Python e a linguagem C. <br> <br>
+                    Estou no 4º semestre de Engenharia da Computação no IESB, onde aprendemos a montar circuitos elétricos, usando resistores, LEDs, portas lógicas e capacitores. Além disso, estudamos programação na linguagem C e estruturação de bancos de dados, utilizando o MySQL.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Conhecimentos</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiência</p>
+                    <p class="tab-links" onclick="opentab('education')">Formação e Competências</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                            <li><span>Java</span><br>Conhecimentos nas principais bibliotecas do Java, bem como em arquitetura e design de projetos Java, seguindo os padrões 'GoF' ou 'Gang of Four'. Além disso, possuo ampla experiência na implementação de testes automatizados usando as ferramentas JUnit e Selenium.</li>
+                            <li><span>Python</span><br>O Python foi a primeira grande linguagem de programação que aprendi por conta própria, e ela me deu a habilidade de criar algoritmos capazes de automatizar projetos e até mesmo replicar um dos meus minigames favoritos da série de jogos 'Fallout'.</li>
+                            <li><span>C</span><br>Durante a faculdade, precisei aprender a linguagem de programação C e, graças ao meu conhecimento prévio em C# e Python, tive um pouco mais de facilidade. Aprendi muito sobre escopos de variáveis, diferenças de compiladores para diferentes sistemas e tamanhos diferentes para os tipos primitivos de variáveis. Além disso, a linguagem C me permitiu entender em profundidade como um arquivo do tipo C passa pelo compilador e se torna código de máquina. </li>
+                            <li><span>R</span><br>Aprendi a linguagem de programação R durante um curso de análise de dados da Google. Com ela, sou capaz de limpar, analisar e gerar gráficos a partir de grandes conjuntos de dados. Ainda sou relativamente novo no uso do R, e estou continuamente aprendendo mais sobre suas bibliotecas e otimizações. É uma linguagem poderosa e altamente eficiente para análise de dados e visualização, e estou sempre em busca de novas maneiras de aproveitá-la em meus projetos.</li>
+                            <li><span>SQL</span><br>Comecei a aprender a Linguagem de Consulta Estruturada (SQL) na faculdade, por meio da matéria de Bancos de Dados. Na época, criei modelos de Entidade e Relacionamento (ER) e implementei-os utilizando o MySQL. Posteriormente, no curso de análise de dados, aprendi a como fazer consultas mais eficazes, utilizando funções do próprio SQL. Atualmente, estou aprendendo a fazer o Java e o SQL se comunicarem entre si.</li>
+                            <li><span>HTML E CSS</span><br>HTML e CSS são duas tecnologias que andam de mãos dadas no desenvolvimento de websites e aplicações web. Quando comecei a programar, um amigo mais velho me sugeriu que eu criasse um portfólio online. Foi então que comecei a aprender sobre as tags do HTML e como estilizá-las com o CSS. Utilizei esses conhecimentos para criar o meu próprio portfólio e, desde então, venho aprimorando minhas habilidades nessa área.</li>
+                            <li><span>JS</span><br>O JavaScript é uma linguagem que aprendi inicialmente para criar animações e scripts na web. No entanto, em comparação com outras linguagens que conheço, sinto que ainda tenho muito a aprender sobre ela. Na verdade, muitas vezes considero o JavaScript um pouco confuso. Acredito que isso se deve ao fato de que existem muitas maneiras diferentes de programar com JavaScript, bem como a diversidade de bibliotecas e frameworks disponíveis. </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Não Possuo</span><br>No entanto, busco uma vaga de um estágio na área de TI</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Engenharia da Computação</span><br>
+                            <a class="certificado" href="assets/historico.pdf">
+                                - Engenharia da Computação IESB (Em formação)
+                            </a>
+                        </li>
+                        <li><span>Analise de Dados</span><br>
+                            <a class="certificado" href="https://www.coursera.org/account/accomplishments/specialization/certificate/97T8JAFXTXZQ">
+                                - Google Data Analytics(PT)
+                            </a>
+                        </li>
+                        <li><span>Java e Orientação a Objetos</span><br>
+                            <a class = "certificado" href="https://cursos.alura.com.br/user/rafaeldantasboeira/degree-arquitetura-design-projetos-java-142135/certificate">
+                            - Formação Java e Orientação a Objetos
+                            </a>
+                        </li>
+                        <li><span>Arquitetura e Design de Projetos Java</span><br>
+                            <a class = "certificado" href="https://cursos.alura.com.br/degree/certificate/68fc3198-a7c2-40cc-8516-73cc8a4cbd0c">
+                            - Formação Java e Orientação a Objetos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------Serviços------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Meus Serviços</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Análise de Dados</h2>
+                <p>Sou habilidoso em conduzir análises de dados, seguindo as seis etapas do processo: coleta, processamento, limpeza, análise, interpretação e apresentação. Sou capaz de utilizar ferramentas como Python, R e SQL para realizar análises exploratórias e estatísticas em dados, e criar visualizações claras e informativas para apresentar aos clientes.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>Back End</h2>
+                <p>Sou proficientemente capaz de desenvolver aplicativos usando várias linguagens de programação, como C, Java e Python. Também sou capaz de implementar padrões de arquitetura e design de software para criar aplicativos escaláveis e robustos.Além disso, tenho habilidades em montar e gerenciar bancos de dados usando a linguagem SQL, criando modelos de dados, realizando consultas e gerenciando a integridade dos dados. </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Tenho habilidades na criação de sites usando as linguagens HTML, CSS e JavaScript. Entendo como estruturar o conteúdo usando HTML e estilizar com CSS para criar layouts atraentes e responsivos. Também posso usar JavaScript para adicionar interatividade aos sites, como animações, validação de formulários e carregamento de conteúdo dinâmico.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------Portfolio------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Meus Projetos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/Novo Projeto.png" draggable="false">
+                <div class="layer">
+                    <h3>Flappy Bird</h3>
+                    <p>Esse projeto foi uma ótima oportunidade para eu aprimorar minhas habilidades em JavaScript na web e entender como funciona a lógica por trás da produção de jogos. Durante o processo, aprendi como movimentar o personagem principal, criar caixas de colisão para as diferentes interações no jogo e deixá-lo em um loop contínuo, permitindo ao jogador jogar indefinidamente.</p>
+                    <a href="https://danzokka.github.io/projeto-flappy-bird/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/fallouthacks.png" draggable="false">
+                <div class="layer">
+                    <h3>Hacking Game Fallout</h3>
+                    <p>Este projeto foi feito em 2022 e teve como inspiração o minigame de hackear do jogo Fallout. Utilizei a linguagem de programação Python para desenvolvê-lo, visando aprimorar minhas habilidades na linguagem e prestar uma homenagem a um dos meus jogos favoritos. Futuramente, pretendo portar o projeto para a web e utilizá-lo como uma oportunidade para aprender mais sobre o py-script, que é um modelo para usar o Python em projetos web com animações em CSS.</p>
+                    <a href="https://github.com/Danzokka/hacking-game-fallout"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/tmnc.png" draggable="false">
+                <div class="layer">
+                    <h3>Faculdade</h3>
+                    <p>Neste repositório, disponibilizei grande parte dos projetos que desenvolvi durante minha formação acadêmica, utilizando principalmente linguagens como C e Java. São projetos que mostram minha evolução no mundo da programação ao longo dos anos e que me ajudaram bastante para a minha evolução como um desenvolvedor.</p>
+                    <a href="https://github.com/Danzokka/Faculdade"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Veja Mais</a>
+    </div>
+</div>
+<!---Fotos-->
+
+
+
+<!----Contato----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tit">Entre em contato</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rafaeldantasboeira@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i></i></i>+55 (61) 993709543</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/danzokka/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Danzokka"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rafael-dantas-134621243/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://discordapp.com/users/264161929679994882/"><i class="fab fa-discord"></i></a>
+                </div>
+                <a href="assets/my-cv.pdf" download class="btn btn2" id="cv">Download Curriculo</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Seu nome" required>
+                    <input type="email" name="Email" placeholder="Seu email" required>
+                    <textarea name="Message" rows="6" placeholder="Sua mensagem"></textarea>
+                    <button type="submit" class="btn btn2" id = "text" onclick="change_text()">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tabinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tabinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzAZD9FJ9lfviO4dpdnnZZnmxfUQWbu9JKuioYP8wqAhzJ0RffNN5p8fF4wSg5DCwsWBg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("btn")
+  
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script>
+    function sleep(milliseconds) {  
+        return new Promise(resolve => setTimeout(resolve, milliseconds));  
+    }  
+
+    async function change_text(){
+        const text = document.getElementById("text");
+        const form = document.forms['submit-to-google-sheet']
+        text.innerHTML = "Enviado"
+        await sleep(5000)
+        form.reset();
+        text.innerHTML = "Enviar mensagem"
+    }
+</script>
+<script>
+
+</script>
+
+</body>
 </html>
