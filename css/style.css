@@ -184,6 +184,42 @@ nav ul li a:hover::after{
     display: block;
 }
 
+.slide {
+    position: relative;
+    left: -1000px;
+    -webkit-animation: slide 0.6s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slide 0.6s forwards;
+    animation-delay: 0s;
+    overflow: hidden;
+}
+
+@-webkit-keyframes slide {
+    0%{
+        opacity: 0%;
+    }
+    
+    70% {
+        opacity: 0%;
+    }
+    
+    100% { left: 0; 
+    opacity: 100%;}
+}
+
+@keyframes slide {
+    0%{
+        opacity: 0%;
+    }
+    
+    70% {
+        opacity: 0%;
+    }
+
+    100% { left: 0; 
+    opacity: 100%;}
+}
+
 /*-----------Serviços-------------*/
 
 #services{
@@ -248,6 +284,7 @@ nav ul li a:hover::after{
     position: relative;
     overflow: hidden;
 }
+
 
 .work img{
     width: 100%;
